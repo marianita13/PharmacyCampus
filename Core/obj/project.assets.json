@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\campus\\.nuget\\packages\\": {}
+    "C:\\Users\\maria\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\campus\\Desktop\\FarmaciaCampus2023\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\maria\\Documents\\PharmacyCampus\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\campus\\Desktop\\FarmaciaCampus2023\\Core\\Core.csproj",
-      "packagesPath": "C:\\Users\\campus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\campus\\Desktop\\FarmaciaCampus2023\\Core\\obj\\",
+      "projectPath": "C:\\Users\\maria\\Documents\\PharmacyCampus\\Core\\Core.csproj",
+      "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\maria\\Documents\\PharmacyCampus\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\campus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"

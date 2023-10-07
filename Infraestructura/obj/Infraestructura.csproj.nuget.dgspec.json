@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\campus\\Desktop\\FarmaciaCampus2023\\Infraestructura\\Infraestructura.csproj": {}
+    "C:\\Users\\maria\\Documents\\PharmacyCampus\\Infraestructura\\Infraestructura.csproj": {}
   },
   "projects": {
-    "C:\\Users\\campus\\Desktop\\FarmaciaCampus2023\\Core\\Core.csproj": {
+    "C:\\Users\\maria\\Documents\\PharmacyCampus\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\campus\\Desktop\\FarmaciaCampus2023\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\maria\\Documents\\PharmacyCampus\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\campus\\Desktop\\FarmaciaCampus2023\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\campus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\campus\\Desktop\\FarmaciaCampus2023\\Core\\obj\\",
+        "projectPath": "C:\\Users\\maria\\Documents\\PharmacyCampus\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maria\\Documents\\PharmacyCampus\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\campus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -57,17 +57,17 @@
         }
       }
     },
-    "C:\\Users\\campus\\Desktop\\FarmaciaCampus2023\\Infraestructura\\Infraestructura.csproj": {
+    "C:\\Users\\maria\\Documents\\PharmacyCampus\\Infraestructura\\Infraestructura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\campus\\Desktop\\FarmaciaCampus2023\\Infraestructura\\Infraestructura.csproj",
+        "projectUniqueName": "C:\\Users\\maria\\Documents\\PharmacyCampus\\Infraestructura\\Infraestructura.csproj",
         "projectName": "Infraestructura",
-        "projectPath": "C:\\Users\\campus\\Desktop\\FarmaciaCampus2023\\Infraestructura\\Infraestructura.csproj",
-        "packagesPath": "C:\\Users\\campus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\campus\\Desktop\\FarmaciaCampus2023\\Infraestructura\\obj\\",
+        "projectPath": "C:\\Users\\maria\\Documents\\PharmacyCampus\\Infraestructura\\Infraestructura.csproj",
+        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maria\\Documents\\PharmacyCampus\\Infraestructura\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\campus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -79,8 +79,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\campus\\Desktop\\FarmaciaCampus2023\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\campus\\Desktop\\FarmaciaCampus2023\\Core\\Core.csproj"
+              "C:\\Users\\maria\\Documents\\PharmacyCampus\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\maria\\Documents\\PharmacyCampus\\Core\\Core.csproj"
               }
             }
           }

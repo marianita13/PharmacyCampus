@@ -5,8 +5,11 @@ using System.Threading.Tasks;
 
 namespace Core.Interfaces
 {
-    public class IUnitOfWork
+    public interface IUnitOfWork
     {
-        
+        ICiudad Ciudades {get;}
+        IDepartamento Departamentos {get;}
+        IPais Paises {get;}
+        Task<int> SaveAsync(); //Guarda todos los cambios realizados
     }
 }
