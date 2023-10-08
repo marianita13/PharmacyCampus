@@ -1,21 +1,19 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+using APIFARMACIA.Dtos;
 using Core.Entities;
 using Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using AutoMapper;
 
 namespace APIFARMACIA.Controllers;
 
-[Route("[controller]")]
 public class CiudadController : BaseController
 {
     private readonly IUnitOfWork _UnitOfWork;
-    public CiudadController(IUnitOfWork unitOfWork){
+    private readonly IMapper _mapper;
+
+    public CiudadController(IUnitOfWork unitOfWork, IMapper mapper){
         _UnitOfWork = unitOfWork;
+        _mapper = mapper;
     }
 
     [HttpGet]
@@ -41,4 +39,44 @@ public class CiudadController : BaseController
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
+
+    public async Task<ActionResult<Ciudad>> Post(CiudadDto ciudadDto){
+        var ciudad = _mapper.Map<Ciudad>(ciudadDto);
+        this._UnitOfWork.Ciudades.Add(ciudad);
+        await _UnitOfWork.SaveAsync();
+        if (ciudad==null){
+            return BadRequest();
+        }
+        return CreatedAtAction(nameof(Post), new { id = ciudad.Id }, ciudad);
+    }
+
+    [HttpPut("{id}")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+
+    public async Task<ActionResult<Ciudad>> Put(int id, Ciudad ciudad){
+        if (ciudad.Id == 0){
+            ciudad.Id=id;
+        }
+        if (ciudad.Id != id){
+            return BadRequest();
+        }
+        if (ciudad == null){
+            return NotFound();
+        }
+        _UnitOfWork.Ciudades.Update(ciudad);
+        await _UnitOfWork.SaveAsync();
+        return ciudad;
+    }
+
+    public async Task<ActionResult> Delete(int id){
+        var ciudad = await _UnitOfWork.Ciudades.GetIdAsync(id);
+        if (ciudad == null){
+            return NotFound();
+        }
+        _UnitOfWork.Ciudades.Remove(ciudad);
+        await _UnitOfWork.SaveAsync();
+        return NoContent();
+    }
 }

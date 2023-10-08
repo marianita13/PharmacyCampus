@@ -18,7 +18,7 @@ namespace Infraestructura.Data.Configuration
 
             builder.HasOne(p => p.Departamentos) //Relacionada las ciudades con los departamentos
             .WithMany(p => p.Ciudades) //Un departamento puede tener muchas ciudades
-            .HasForeignKey(p => p.IdDepartamento); //Y esas ciudades estan asociadas a ese departamento gracias al IdDepartamento
+            .HasForeignKey(p => p.IdDepartamento); //Las ciudades estan asociadas a ese departamento
         }
     }
 }

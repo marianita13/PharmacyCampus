@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "J/lBlxukmawoRk/Ts43KpunzPlD6DXhjD5SzcVYPisi4+S7XQsqj6hQzafu4SpzfDQmCXAkb66ulBEbM5axPMg==",
+  "dgSpecHash": "+6JM2QgIg0RB5Yy5JpxyH7p/z7FMOPCRhjWbBTdFJnvP6VHxZDDl+b1Z6SgpKNlQE2KivX0S40QnGryZ9Gu2jw==",
   "success": true,
   "projectFilePath": "C:\\Users\\maria\\Documents\\PharmacyCampus\\Infraestructura\\Infraestructura.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\maria\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\maria\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
+    "C:\\Users\\maria\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\maria\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.10\\microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
     "C:\\Users\\maria\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.10\\microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",
     "C:\\Users\\maria\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.10\\microsoft.entityframeworkcore.analyzers.7.0.10.nupkg.sha512",
