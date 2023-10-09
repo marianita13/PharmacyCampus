@@ -3,30 +3,67 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using APIFARMACIA.Dtos;
+using AutoMapper;
+using Core.Entities;
+using Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace APIFARMACIA.Controllers
 {
-    [Route("[controller]")]
-    public class PaisController : Controller
+    public class PaisController : BaseController
     {
-        private readonly ILogger<PaisController> _logger;
+        private readonly IUnitOfWork _UnitOfWork;
+        private readonly IMapper _mapper;
 
-        public PaisController(ILogger<PaisController> logger)
+        public PaisController(IUnitOfWork unitOfWork, IMapper mapper)
         {
-            _logger = logger;
+            _UnitOfWork = unitOfWork;
+            _mapper = mapper;
         }
 
-        public IActionResult Index()
-        {
-            return View();
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
+        public async Task<ActionResult<IEnumerable<Pais>>> Get(){
+            var namevar = await _UnitOfWork.Paises.GetAllAsync();
+            return Ok(namevar);
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View("Error!");
+        [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+
+        public async Task<ActionResult<IEnumerable<Pais>>> GetId(int id){
+            var pais = await _UnitOfWork.Paises.GetIdAsync(id);
+            if (pais == null){
+                return NotFound();
+            }
+            return Ok(pais);
         }
+
+        [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
+        public async Task<ActionResult<Pais>> Post(PaisDto paisDto){
+            var pais = _mapper.Map<Pais>(paisDto);
+            this._UnitOfWork.Paises.Add(pais);
+            await _UnitOfWork.SaveAsync();
+            if (pais == null){
+                return BadRequest();
+            }
+            return CreatedAtAction(nameof(Post), new {id = pais.Id}, pais);
+        }
+
+        // [HttpPut("{id}")]
+        // [ProducesResponseType(StatusCodes.Status201Created)]
+        // [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
+        // public async Task<ActionResult<Pais>> Put(Pais pais, int id){
+
+        // }
     }
 }
