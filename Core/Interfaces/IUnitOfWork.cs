@@ -10,6 +10,7 @@ namespace Core.Interfaces
         ICiudad Ciudades {get;}
         IDepartamento Departamentos {get;}
         IPais Paises {get;}
+        ITipoDeDocumento TiposDocumentos {get;}
         Task<int> SaveAsync(); //Guarda todos los cambios realizados
     }
 }

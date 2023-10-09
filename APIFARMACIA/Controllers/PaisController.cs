@@ -50,12 +50,13 @@ namespace APIFARMACIA.Controllers
 
         public async Task<ActionResult<Pais>> Post(PaisDto paisDto){
             var pais = _mapper.Map<Pais>(paisDto);
-            this._UnitOfWork.Paises.Add(pais);
+            _UnitOfWork.Paises.Add(pais);
             await _UnitOfWork.SaveAsync();
             if (pais == null){
                 return BadRequest();
             }
-            return CreatedAtAction(nameof(Post), new {id = pais.Id}, pais);
+            paisDto.Id = pais.Id;
+            return CreatedAtAction(nameof(Post), new {id = paisDto.Id}, paisDto);
         }
 
         [HttpPut("{id}")]

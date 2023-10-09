@@ -20,3 +20,14 @@ C:\Users\campus\Desktop\PharmacyCampus\Core\obj\Debug\net7.0\Core.dll
 C:\Users\campus\Desktop\PharmacyCampus\Core\obj\Debug\net7.0\refint\Core.dll
 C:\Users\campus\Desktop\PharmacyCampus\Core\obj\Debug\net7.0\Core.pdb
 C:\Users\campus\Desktop\PharmacyCampus\Core\obj\Debug\net7.0\ref\Core.dll
+C:\Users\APM02-43\Desktop\PharmacyCampus\Core\bin\Debug\net7.0\Core.deps.json
+C:\Users\APM02-43\Desktop\PharmacyCampus\Core\bin\Debug\net7.0\Core.dll
+C:\Users\APM02-43\Desktop\PharmacyCampus\Core\bin\Debug\net7.0\Core.pdb
+C:\Users\APM02-43\Desktop\PharmacyCampus\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\APM02-43\Desktop\PharmacyCampus\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+C:\Users\APM02-43\Desktop\PharmacyCampus\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+C:\Users\APM02-43\Desktop\PharmacyCampus\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\APM02-43\Desktop\PharmacyCampus\Core\obj\Debug\net7.0\Core.dll
+C:\Users\APM02-43\Desktop\PharmacyCampus\Core\obj\Debug\net7.0\refint\Core.dll
+C:\Users\APM02-43\Desktop\PharmacyCampus\Core\obj\Debug\net7.0\Core.pdb
+C:\Users\APM02-43\Desktop\PharmacyCampus\Core\obj\Debug\net7.0\ref\Core.dll

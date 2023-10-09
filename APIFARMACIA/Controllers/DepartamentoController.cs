@@ -54,7 +54,8 @@ namespace APIFARMACIA.Controllers
             if(departamento == null){
                 return BadRequest();
             }
-            return CreatedAtAction(nameof(Post), new { id = departamento.Id}, departamento);
+            departamentoDto.Id = departamento.Id;
+            return CreatedAtAction(nameof(Post), new { id = departamentoDto.Id}, departamentoDto);
         }
 
         [HttpPut("{id}")]

@@ -1,33 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\campus\\Desktop\\PharmacyCampus\\APIFARMACIA\\APIFARMACIA.csproj": {}
+    "C:\\Users\\APM02-43\\Desktop\\PharmacyCampus\\APIFARMACIA\\APIFARMACIA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\campus\\Desktop\\PharmacyCampus\\APIFARMACIA\\APIFARMACIA.csproj": {
+    "C:\\Users\\APM02-43\\Desktop\\PharmacyCampus\\APIFARMACIA\\APIFARMACIA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\campus\\Desktop\\PharmacyCampus\\APIFARMACIA\\APIFARMACIA.csproj",
+        "projectUniqueName": "C:\\Users\\APM02-43\\Desktop\\PharmacyCampus\\APIFARMACIA\\APIFARMACIA.csproj",
         "projectName": "APIFARMACIA",
-        "projectPath": "C:\\Users\\campus\\Desktop\\PharmacyCampus\\APIFARMACIA\\APIFARMACIA.csproj",
-        "packagesPath": "C:\\Users\\campus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\campus\\Desktop\\PharmacyCampus\\APIFARMACIA\\obj\\",
+        "projectPath": "C:\\Users\\APM02-43\\Desktop\\PharmacyCampus\\APIFARMACIA\\APIFARMACIA.csproj",
+        "packagesPath": "C:\\Users\\APM02-43\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APM02-43\\Desktop\\PharmacyCampus\\APIFARMACIA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\campus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\APM02-43\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Infraestructura\\Infraestructura.csproj": {
-                "projectPath": "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Infraestructura\\Infraestructura.csproj"
+              "C:\\Users\\APM02-43\\Desktop\\PharmacyCampus\\Infraestructura\\Infraestructura.csproj": {
+                "projectPath": "C:\\Users\\APM02-43\\Desktop\\PharmacyCampus\\Infraestructura\\Infraestructura.csproj"
               }
             }
           }
@@ -108,22 +110,24 @@
         }
       }
     },
-    "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Core\\Core.csproj": {
+    "C:\\Users\\APM02-43\\Desktop\\PharmacyCampus\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\APM02-43\\Desktop\\PharmacyCampus\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\campus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Core\\obj\\",
+        "projectPath": "C:\\Users\\APM02-43\\Desktop\\PharmacyCampus\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\APM02-43\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APM02-43\\Desktop\\PharmacyCampus\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\campus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\APM02-43\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -161,30 +165,32 @@
         }
       }
     },
-    "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Infraestructura\\Infraestructura.csproj": {
+    "C:\\Users\\APM02-43\\Desktop\\PharmacyCampus\\Infraestructura\\Infraestructura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Infraestructura\\Infraestructura.csproj",
+        "projectUniqueName": "C:\\Users\\APM02-43\\Desktop\\PharmacyCampus\\Infraestructura\\Infraestructura.csproj",
         "projectName": "Infraestructura",
-        "projectPath": "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Infraestructura\\Infraestructura.csproj",
-        "packagesPath": "C:\\Users\\campus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Infraestructura\\obj\\",
+        "projectPath": "C:\\Users\\APM02-43\\Desktop\\PharmacyCampus\\Infraestructura\\Infraestructura.csproj",
+        "packagesPath": "C:\\Users\\APM02-43\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APM02-43\\Desktop\\PharmacyCampus\\Infraestructura\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\campus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\APM02-43\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Core\\Core.csproj"
+              "C:\\Users\\APM02-43\\Desktop\\PharmacyCampus\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\APM02-43\\Desktop\\PharmacyCampus\\Core\\Core.csproj"
               }
             }
           }

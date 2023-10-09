@@ -18,6 +18,7 @@ namespace Infraestructura.UnitOfWork
         public ICiudad _Ciudades;
         public IDepartamento _Departamentos;
         public IPais _Paises;
+        public ITipoDeDocumento _TipoDocumento;
 
         public ICiudad Ciudades{
             get{
@@ -43,6 +44,15 @@ namespace Infraestructura.UnitOfWork
                     _Paises = new PaisRepository(_context);
                 }
                 return _Paises;
+            }
+        }
+
+        public ITipoDeDocumento TipoDeDocumento{
+            get{
+                if (_TipoDocumento == null){
+                    _TipoDocumento = new TipoDocumentoRepository(_context);
+                }
+                return _TipoDocumento;
             }
         }
 

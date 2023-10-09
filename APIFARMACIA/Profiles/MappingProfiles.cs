@@ -9,6 +9,10 @@ namespace APIFARMACIA.Profiles
         public MappingProfiles()
         {
             CreateMap<Ciudad, CiudadDto>().ReverseMap();
+            CreateMap<Pais, PaisDto>().ReverseMap();
+            CreateMap<Departamento, DepartamentoDto>().ReverseMap();
         }
+
+        
     }
 }

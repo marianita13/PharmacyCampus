@@ -19,7 +19,6 @@ public class CiudadController : BaseController
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-
     public async Task<ActionResult<IEnumerable<Ciudad>>> Get(){
         var nameVar = await _UnitOfWork.Ciudades.GetAllAsync();
         return Ok(nameVar);
@@ -47,7 +46,8 @@ public class CiudadController : BaseController
         if (ciudad==null){
             return BadRequest();
         }
-        return CreatedAtAction(nameof(Post), new { id = ciudad.Id }, ciudad);
+        ciudadDto.Id = ciudad.Id;
+        return CreatedAtAction(nameof(Post), new { id = ciudadDto.Id }, ciudadDto);
     }
 
     [HttpPut("{id}")]
