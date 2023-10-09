@@ -861,19 +861,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\maria\\.nuget\\packages\\": {}
+    "C:\\Users\\campus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\maria\\Documents\\PharmacyCampus\\Infraestructura\\Infraestructura.csproj",
+      "projectUniqueName": "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Infraestructura\\Infraestructura.csproj",
       "projectName": "Infraestructura",
-      "projectPath": "C:\\Users\\maria\\Documents\\PharmacyCampus\\Infraestructura\\Infraestructura.csproj",
-      "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\maria\\Documents\\PharmacyCampus\\Infraestructura\\obj\\",
+      "projectPath": "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Infraestructura\\Infraestructura.csproj",
+      "packagesPath": "C:\\Users\\campus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Infraestructura\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\campus\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -885,8 +885,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\maria\\Documents\\PharmacyCampus\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\maria\\Documents\\PharmacyCampus\\Core\\Core.csproj"
+            "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Core\\Core.csproj"
             }
           }
         }

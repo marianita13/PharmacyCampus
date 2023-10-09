@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maria\\Documents\\PharmacyCampus\\Core\\Core.csproj": {}
+    "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maria\\Documents\\PharmacyCampus\\Core\\Core.csproj": {
+    "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maria\\Documents\\PharmacyCampus\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\maria\\Documents\\PharmacyCampus\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maria\\Documents\\PharmacyCampus\\Core\\obj\\",
+        "projectPath": "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\campus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\campus\\Desktop\\PharmacyCampus\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\campus\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

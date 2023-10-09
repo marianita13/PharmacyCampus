@@ -55,7 +55,7 @@ public class CiudadController : BaseController
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
 
-    public async Task<ActionResult<Ciudad>> Put(int id, Ciudad ciudad){
+    public async Task<ActionResult<Ciudad>> Put(int id, [FromBody] Ciudad ciudad){
         if (ciudad.Id == 0){
             ciudad.Id=id;
         }

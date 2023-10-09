@@ -62,7 +62,7 @@ namespace APIFARMACIA.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
 
-        public async Task<ActionResult<Departamento>> Put(int id, Departamento departamento){
+        public async Task<ActionResult<Departamento>> Put(int id, [FromBody] Departamento departamento){
             if (departamento.Id == 0){
                 departamento.Id = id;
             }

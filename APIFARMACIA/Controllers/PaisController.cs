@@ -58,12 +58,38 @@ namespace APIFARMACIA.Controllers
             return CreatedAtAction(nameof(Post), new {id = pais.Id}, pais);
         }
 
-        // [HttpPut("{id}")]
-        // [ProducesResponseType(StatusCodes.Status201Created)]
-        // [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [HttpPut("{id}")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
 
-        // public async Task<ActionResult<Pais>> Put(Pais pais, int id){
+        public async Task<ActionResult<Pais>> Put (int id, [FromBody] Pais pais){
+            if (pais.Id == 0){
+                pais.Id = id;
+            }
+            if (pais.Id != id){
+                return BadRequest();
+            }
+            if (pais == null){
+                return NotFound();
+            }
+            _UnitOfWork.Paises.Update(pais);
+            await _UnitOfWork.SaveAsync();
+            return Ok(pais);
+        }
 
-        // }
+        [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+
+        public async Task<ActionResult> Delete(int id){
+            var pais = await _UnitOfWork.Paises.GetIdAsync(id);
+            if (pais == null){
+                return NotFound();
+            }
+            _UnitOfWork.Paises.Remove(pais);
+            await _UnitOfWork.SaveAsync();
+            return NoContent();
+        }
     }
 }
