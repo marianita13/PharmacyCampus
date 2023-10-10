@@ -18,7 +18,7 @@ namespace Infraestructura.UnitOfWork
         public ICiudad _Ciudades;
         public IDepartamento _Departamentos;
         public IPais _Paises;
-        public ITipoDeDocumento _TipoDocumento;
+        public ITipoDeDocumento _TiposDocumentos;
 
         public ICiudad Ciudades{
             get{
@@ -47,15 +47,14 @@ namespace Infraestructura.UnitOfWork
             }
         }
 
-        public ITipoDeDocumento TipoDeDocumento{
+        public ITipoDeDocumento TiposDocumentos{
             get{
-                if (_TipoDocumento == null){
-                    _TipoDocumento = new TipoDocumentoRepository(_context);
+                if (_TiposDocumentos == null){
+                    _TiposDocumentos = new TipoDocumentoRepository(_context);
                 }
-                return _TipoDocumento;
+                return _TiposDocumentos;
             }
         }
-
         public Task<int> SaveAsync()
         {
             return _context.SaveChangesAsync();

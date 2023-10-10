@@ -11,6 +11,7 @@ namespace APIFARMACIA.Profiles
             CreateMap<Ciudad, CiudadDto>().ReverseMap();
             CreateMap<Pais, PaisDto>().ReverseMap();
             CreateMap<Departamento, DepartamentoDto>().ReverseMap();
+            CreateMap<TipoDeDocumento, TipoDocumentoDto>().ReverseMap();
         }
 
         
